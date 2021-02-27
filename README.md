@@ -26,7 +26,7 @@
 
 A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web API built on the <strong> Node.js </strong> track of <strong> Next Level Week #4</strong> presented by <strong>[Rocketseat](https://rocketseat.com.br/)</strong>.
 
-## 🚀 Technologies
+## 🚀 Technology
 
 This project has been developed and tested with the following technologies:
 
