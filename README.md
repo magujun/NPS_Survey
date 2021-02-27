@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/magujun/nodeJS-NPS_Survey.svg?branch=main)](https://travis-ci.com/magujun/nodeJS-NPS_Survey)
+
 # nodeJS-NPS_Survey
 
 <h3 align="center">
