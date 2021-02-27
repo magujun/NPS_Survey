@@ -145,7 +145,7 @@ and
 The first time you run the server will generate the sqlite3 database.sqlite file, where the API tables are stored
 
 ```bash
-- yarn dev
+- yarn devDB
 ```
 
 Create table of migrations from sqlite3 using the TypeORM cli
