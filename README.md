@@ -7,7 +7,7 @@
       <a href="#-technologies">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-setup">Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <a href="#-links">Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#-project-links">Project links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-contribute">Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-license">License</a>
   </p>
@@ -24,7 +24,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/magujun/nodeJS-NPS_Survey?style=social)](https://github.com/magujun/nodeJS-NPS_Survey/network/members/)
 [![GitHub stars](https://img.shields.io/github/stars/magujun/nodeJS-NPS_Survey?style=social)](https://github.com/magujun/nodeJS-NPS_Survey/stargazers/)
 
-A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web API built on the <strong> Node.js </strong> track of <strong> Next Level Week #4</strong> presented by [Rocketseat](https://rocketseat.com.br/).
+A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web API built on the <strong> Node.js </strong> track of <strong> Next Level Week #4</strong> presented by <strong>[Rocketseat](https://rocketseat.com.br/)</strong>.
 
 ## 🚀 Technologies
 
@@ -46,7 +46,7 @@ This project has been developed and tested with the following technologies:
 These instructions will take you to a copy of the project running on your local machine for testing and development purposes.
 Integration tests have been implemented.
 
-<strong>Note:</strong> The database used in this project is sqlite3, but you should be able to configure the <i>ormconfig.json</i> file for your specific database.
+**Note:** The database used in this project is sqlite3, but you should be able to configure the <i>ormconfig.json</i> file for your specific database.
 
 The "database" field in the DBMS represents the name of the database, which in this project is local.
 
@@ -55,7 +55,7 @@ The "database" field in the DBMS represents the name of the database, which in t
 - cd nodeJS-NPS_Survey
 ```
 
-<strong>Windows Setup (Powershell)</strong>
+### Windows Setup (Powershell)
 ```Powershell
 - Set-ExecutionPolicy RemoteSigned
 - Get-ExecutionPolicy
@@ -185,7 +185,7 @@ To test if the application has been correctly setup and pass all integration tes
 
 ## 🎓 Who taught?
 
-All the classes were taught by **[Daniele Leão](https://github.com/danileao)** at Rocketseat's **Next Level Week #4**.
+All the classes were taught by **[Daniele Leão](https://github.com/danileao)** at Rocketseat's **NLW#4**.
 
 ## 🤔 Contribute
 
