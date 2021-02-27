@@ -28,7 +28,7 @@ A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web 
 
 ## 🚀 Technologies
 
-This project has been developed with the following technologies:
+This project has been developed and tested with the following technologies:
 
 - [Node.js](https://nodejs.org/en/) :: JavaScript runtime
 - [Express](https://expressjs.com/) :: web framework
@@ -39,6 +39,7 @@ This project has been developed with the following technologies:
 - [Nodemailer](https://nodemailer.com/) :: Node.js module to send emails
 - [Jest](https://jestjs.io/) :: JavaScript testing framework
 - [Yup](https://github.com/jquense/yup) :: object schema validation
+- [Ethereal](https://ethereal.email/) :: fake SMTP service
 
 ## ⤵ Setup
 
@@ -203,6 +204,6 @@ See the [LICENSE](LICENSE) file for more details.
 ---
 
 <h4 align="center">
-  Done by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
-  Inspired by <a href="https://www.linkedin.com/in/lucas-angelo/" target="_blank">Lucas Ângelo.</a>
+  Done with ❤ by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
+  Inspired by <a href="https://www.linkedin.com/in/lucas-angelo/" target="_blank">Lucas Ângelo's.</a>
 </h4>
