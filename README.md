@@ -97,8 +97,10 @@ or
 - yarn install
 ```
 or
+
+Terminal <i>(Powershell)</i>
 ```terminal
-Terminal <i>Powershell</i>
+
 
 ```Terminal
 - yarn init -y
