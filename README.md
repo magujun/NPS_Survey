@@ -26,7 +26,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/magujun/nodeJS-NPS_Survey?style=social)](https://github.com/magujun/nodeJS-NPS_Survey/network/members/)
 [![GitHub stars](https://img.shields.io/github/stars/magujun/nodeJS-NPS_Survey?style=social)](https://github.com/magujun/nodeJS-NPS_Survey/stargazers/)
 
-A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web API built on the <strong> Node.js </strong> track of <strong> Next Level Week #4</strong> presented by <strong>[Rocketseat](https://rocketseat.com.br/)</strong>.
+A Node.js <strong>TypeScript</strong> based Net Promoter Score (NPS) survey web REST API built on the **Node.js** track of **Next Level Week #4** presented by **[Rocketseat](https://rocketseat.com.br/)**.
 
 ## 🚀 Technology
 
@@ -166,7 +166,11 @@ Initialize a local server instance (script configured in package.json)
 
 ## ⤵ Testing
 
-To test if the application has been correctly setup and pass all integration tests, use the command:
+To make requests and inspect responses you can use **[Insomnia Core]**(https://insomnia.rest/) client for REST applications.
+
+To check your database you can use **[Beekeeper Studio]**(https://www.beekeeperstudio.io/).
+
+To test if the application has been correctly setup and pass all integration tests, please use the command:
 
 ```bash
 - yarn test
