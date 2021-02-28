@@ -74,7 +74,7 @@ The "database" field in the DBMS represents the name of the database, which in t
 
 ### Visual Studio Code Setup 
 
-<strong>Recommended Extensions</strong>
+**Recommended Extensions**
 
   - Omni
   - Material Icon Theme
@@ -88,7 +88,7 @@ The "database" field in the DBMS represents the name of the database, which in t
 
 Install dependencies (recommended using NPM for reflect-metadata compatibility)
 
-VS Code Terminal <i>(Powershell)</i>
+VS Code Terminal *(Powershell)*
 ```bash
 - npm install
 ```
@@ -146,19 +146,19 @@ or
 - yarn add prettier -D
 ```
 
-The first time you run the server will generate the sqlite3 database.sqlite file, where the API tables are stored
+The first time you run the server will generate the sqlite3 database.sqlite file, where the API tables are stored.
 
 ```bash
 - yarn devDB
 ```
 
-Create table of migrations from sqlite3 using the TypeORM cli
+Create table of migrations from sqlite3 using the TypeORM cli.
 
 ```bash
 - yarn typeorm migration:run
 ```
 
-Initialize a local server instance (script configured in package.json)
+Initialize a local server instance (script configured in package.json).
 
 ```bash
 - yarn dev
@@ -166,9 +166,9 @@ Initialize a local server instance (script configured in package.json)
 
 ## ⤵ Testing
 
-To make requests and inspect responses you can use **[Insomnia Core]**(https://insomnia.rest/) client for REST applications.
+To make requests and inspect responses you can use [Insomnia Core](https://insomnia.rest/) client for REST applications.
 
-To check your database you can use **[Beekeeper Studio]**(https://www.beekeeperstudio.io/).
+To check your database you can use [Beekeeper Studio](https://www.beekeeperstudio.io/).
 
 To test if the application has been correctly setup and pass all integration tests, please use the command:
 
