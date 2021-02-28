@@ -85,8 +85,20 @@ The "database" field in the DBMS represents the name of the database, which in t
   - Code Spell Checker
   - Live Server
   - Markdown All in One
-  
-  Terminal <i>Powershell</i>
+
+Install dependencies (recommended using NPM for reflect-metadata compatibility)
+
+```bash
+- npm install
+```
+or
+
+```bash
+- yarn install
+```
+or
+```terminal
+Terminal <i>Powershell</i>
 
 ```Terminal
 - yarn init -y
@@ -134,16 +146,7 @@ The "database" field in the DBMS represents the name of the database, which in t
 - yarn add eslint -D  
 - yarn add prettier -D
 ```
-Install dependencies (recommended using NPM for reflect-metadata compatibility)
 
-```bash
-- npm install
-```
-and
-
-```bash
-- yarn install
-```
 The first time you run the server will generate the sqlite3 database.sqlite file, where the API tables are stored
 
 ```bash
