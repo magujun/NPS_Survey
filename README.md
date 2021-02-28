@@ -88,6 +88,7 @@ The "database" field in the DBMS represents the name of the database, which in t
 
 Install dependencies (recommended using NPM for reflect-metadata compatibility)
 
+VS Code Terminal <i>(Powershell)</i>
 ```bash
 - npm install
 ```
@@ -97,10 +98,6 @@ or
 - yarn install
 ```
 or
-
-Terminal <i>(Powershell)</i>
-```terminal
-
 
 ```Terminal
 - yarn init -y
