@@ -168,7 +168,7 @@ Initialize a local server instance (script configured in package.json).
 
 To make requests and inspect responses you can use [Insomnia Core](https://insomnia.rest/) client for REST applications.
 
-To check your database you can use [Beekeeper Studio](https://www.beekeeperstudio.io/).
+To edit and manage your SQL database you can use [Beekeeper Studio](https://www.beekeeperstudio.io/).
 
 To test if the application has been correctly setup and pass all integration tests, please use the command:
 
