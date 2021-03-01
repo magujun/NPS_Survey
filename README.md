@@ -212,6 +212,5 @@ See the [LICENSE](LICENSE) file for more details.
 ---
 
 <h4 align="center">
-  Done with ❤ by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
-  Inspired by <a href="https://www.linkedin.com/in/lucas-angelo/" target="_blank">Lucas Ângelo's.</a>
+  Done by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
 </h4>
