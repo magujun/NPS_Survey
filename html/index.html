@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Survey Form</title>
-    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -24,42 +25,32 @@
           Participate in a random NPS Survey
         </button>
 
-        <div id="question">
+        <div id="question" class="hidden">
           <input
             id="question-input"
             type="text"
             placeholder="What's your survey question?"
           />
-          <button
-            id="question-button"
-            class="question-button"
-            type="button"
-            disabled="disabled"
-          >
+          <button id="question-button" type="button" disabled="disabled">
             create survey
           </button>
         </div>
 
-        <div id="email">
+        <div id="email" class="hidden">
           <input
             id="email-input"
             type="text"
             placeholder="What's your email?"
           />
-          <button
-            id="email-button"
-            class="email-button"
-            type="button"
-            disabled="disabled"
-          >
+          <button id="email-button" type="button" disabled="disabled">
             send email
           </button>
         </div>
+        <div class="hidden" id="create_success">Survey created!</div>
+        <div class="hidden" id="participate_success">
+          Thanks for your collaboration!
+        </div>
       </form>
-      <div class="hidden" id="create_success">Survey created!</div>
-      <div class="hidden" id="participate_success">
-        Thanks for your collaboration!
-      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="form.js"></script>
