@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://rocketseat.com.br">
-    <img src="https://i.imgur.com/1o7urkT.png">
+    <img width="400px" src="https://i.imgur.com/1o7urkT.png">
   </a>
 </p>
 
