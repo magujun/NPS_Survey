@@ -15,12 +15,6 @@
   </p>
 </h3>
 
-<p align="center">
-  <a href="https://rocketseat.com.br">
-    <img width="400px" src="https://i.imgur.com/1o7urkT.png">
-  </a>
-</p>
-
 ## 🔖 About
 
 [![GitHub forks](https://img.shields.io/github/forks/magujun/nodeJS-NPS_Survey?style=social)](https://github.com/magujun/nodeJS-NPS_Survey/network/members/)
