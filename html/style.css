@@ -30,8 +30,7 @@ body {
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
   -o-animation: fadein 3s; /* Opera */
-  /* animation: popin 0.6s ease; */
-  animation: popout 1s;
+  animation: popout 3s;
 }
 @keyframes fadein {
   from {
@@ -41,17 +40,6 @@ body {
     opacity: 1;
   }
 }
-/* @keyframes popin {
-  from {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(0);
-  }
-} */
 @keyframes popout {
   from {
     transform: scale(0);
@@ -92,7 +80,6 @@ body {
   transition: width 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .main .trans {
-  /* transform: scale(1.25); */
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
