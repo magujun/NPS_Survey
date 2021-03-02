@@ -6,7 +6,7 @@
     <img width="200px" src="https://i.imgur.com/NDGJnnY.png">
     <br><br>
     <p align="center">
-      <a href="#-technologies">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-setup">Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-testing">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-project-links">Project links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
