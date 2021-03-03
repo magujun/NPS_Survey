@@ -16,41 +16,49 @@
     <div class="avatar">
       <img src="./img/profilephoto.jpg" />
     </div>
-    <h3>nodeJS-NPS_Survey</h3>
+    <h3><a href=".">nodeJS-NPS_Survey</h3></a>
 
     <div class="main">
-      <form id="form">
-        <button id="create" type="button">Create your own NPS Survey</button>
-        <button id="participate" type="button">
-          Participate in a random NPS Survey
+      <form id="create" action="../surveys" method="POST">
+        <button id="create-button" type="button">
+          Create your own NPS Survey
         </button>
-
-        <div id="question" class="hidden">
+        <div id="title_desc" class="hidden">
           <input
-            id="question-input"
+            id="title"
+            name="title"
             type="text"
+            class="hidden"
+            placeholder="What's your survey title?"
+          />
+          <input
+            id="description"
+            name="description"
+            type="text"
+            class="hidden"
             placeholder="What's your survey question?"
           />
-          <button id="question-button" type="button" disabled="disabled">
-            create survey
+          <button id="title_desc-button" type="submit" class="hidden" disabled="disabled">
+            create
           </button>
-        </div>
-
-        <div id="email" class="hidden">
-          <input
-            id="email-input"
-            type="text"
-            placeholder="What's your email?"
-          />
-          <button id="email-button" type="button" disabled="disabled">
-            send email
-          </button>
-        </div>
-        <div class="hidden" id="create_success">Survey created!</div>
-        <div class="hidden" id="participate_success">
-          Thanks for your collaboration!
         </div>
       </form>
+      <div class="hidden" id="create_success">Survey created!</div>
+      <form id="participate" action="../users" method="POST">
+        <button id="participate-button" type="button">
+          Participate in a random NPS Survey
+        </button>
+        <div id="name_email" class="hidden">
+          <input id="name" name="name" type="text" class="hidden" placeholder="What's your name?" />
+          <input id="email" name="email" type="text" class="hidden" placeholder="What's your email?" />
+          <button id="name_email-button" type="submit" class="hidden" disabled="disabled">
+            send
+          </button>
+        </div>
+      </form>
+      <div class="hidden" id="participate_success">
+        Thanks for your collaboration!
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="form.js"></script>

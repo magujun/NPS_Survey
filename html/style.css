@@ -13,24 +13,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10;
   background-color: #333;
-  color: whitesmoke;
-}
-.avatar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
-  animation: popout 3s;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
 }
 @keyframes fadein {
   from {
@@ -40,21 +27,35 @@ body {
     opacity: 1;
   }
 }
+a,
+a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.avatar,
+.avatar img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: popout 3s;
+}
 @keyframes popout {
   from {
     transform: scale(0);
   }
-  90% {
+  60% {
     transform: scale(1.2);
   }
   to {
     transform: scale(1);
   }
 }
-.avatar img {
-  width: 8rem;
-  height: 8rem;
-}
+
 .main .hidden {
   color: transparent;
   position: absolute;
@@ -65,15 +66,30 @@ body {
   opacity: 0;
   height: 0;
 }
-.main {
-  font-size: 1rem;
-  width: 20rem;
-  height: 4rem;
+.main #create_success,
+.main #participate_success {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0;
   text-align: center;
+  font-size: 1rem;
+  align-items: center;
+  background-color: #8257e6;
+  font-weight: bold;
+  z-index: 1;
+  opacity: 1;
+}
+.main {
+  font-size: 1rem;
+  width: 60%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  background-color: #8257e6;
+  color:whitesmoke;
   border-radius: 1rem;
   overflow: hidden;
   opacity: 1;
@@ -94,10 +110,12 @@ body {
   }
 }
 .main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   font-size: 1rem;
   background-color: #8257e6;
-  align-items: center;
-  position: relative;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -110,7 +128,7 @@ body {
   outline: none;
   margin: 0;
   padding: 0;
-  height: 50%;
+  height: 100%;
   width: 100%;
   color: #00ff00;
   cursor: url(./img/pointinghand.png), auto;
@@ -118,9 +136,10 @@ body {
 }
 .main form div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 100%;
   width: 100%;
   opacity: 1;
   z-index: 2;
@@ -129,6 +148,7 @@ body {
   font-size: 0.8rem;
   font-weight: normal;
   height: 1rem;
+  margin-top: 4px;
   width: 100%;
   background-color: whitesmoke;
   box-sizing: border-box;
@@ -139,22 +159,20 @@ body {
 .main form div button {
   font-size: 0.8rem;
   font-weight: normal;
-  height: 1rem;
-  width: 30%;
-  background-color: whitesmoke;
-  box-sizing: border-box;
+  background-color: #00ff00;
+  color: whitesmoke;
+  width: auto;
+  margin: 10px;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
   border: none;
   outline: none;
-  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* padding: 0; */
   opacity: 1;
-  border-radius: 0;
+  border-radius: 2rem;
   cursor: url(./img/pointinghandSubmit.png), auto;
 }
-.main form #create_success,
-.main form #participate_success {
-  font-size: 1rem;
-  align-items: center;
-  color: whitesmoke;
-  font-weight: bold;
-  z-index: 1;
-}
+
