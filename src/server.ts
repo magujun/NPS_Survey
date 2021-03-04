@@ -1,5 +1,5 @@
 // => app.ts
-// import express from 'express';
+
 // import 'reflect-metadata';
 // import './database';
 // import { router } from "./routes";
@@ -11,7 +11,7 @@
 
 import { app } from './app';
 
-app.listen(5500, () => console.log('Server is running!'));
+app.listen(3333, () => console.log('Node server is running!'));
 
 // /**
 //  * GET => Busca

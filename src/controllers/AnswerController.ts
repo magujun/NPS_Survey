@@ -11,7 +11,7 @@ class AnswerController {
 		//   http://localhost:3333/answers/${nota}?u={id_usuario}
 		/**
      *
-     Route/Request params => Parametros que compoem a rota, obrigatorios
+     Route/Request params => Parametros que compoem a rota, obrigatórios
      routes.get("/answers/:value")
      
      Query Params => Busca, paginaçao, nao obrigatorios
