@@ -1,178 +1,177 @@
 * {
-  font-size: 1.5rem;
-  font-family: "Rubik";
-  font-weight: bold;
+	font-size: 1.5rem;
+	font-family: 'Rubik';
+	font-weight: bold;
 }
 html {
-  min-height: 100%;
-  cursor: url(./img/pointinghand.png), auto;
+	min-height: 100%;
+	cursor: url(./img/pointinghand.png), auto;
 }
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	animation: fadein 4s;
+	-moz-animation: fadein 4s; /* Firefox */
+	-webkit-animation: fadein 4s; /* Safari and Chrome */
+	-o-animation: fadein 4s; /* Opera */
 }
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 a,
 a:hover {
-  text-decoration: none;
-  color: whitesmoke;
+	text-decoration: none;
+	color: whitesmoke;
 }
 .avatar,
 .avatar img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: popout 3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	overflow: hidden;
+	animation: popout 3s;
 }
 @keyframes popout {
-  from {
-    transform: scale(0);
-  }
-  60% {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
+	from {
+		transform: scale(0);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .main .hidden {
-  color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  height: 0;
+	color: transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	height: 0;
 }
 .main #create_success,
 .main #participate_success {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 1rem;
-  align-items: center;
-  background-color: #8257e6;
-  font-weight: bold;
-  z-index: 1;
-  opacity: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 1rem;
+	align-items: center;
+	background-color: #8257e6;
+	font-weight: bold;
+	z-index: 1;
+	opacity: 1;
 }
 .main {
-  font-size: 1rem;
-  width: 60%;
-  height: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  background-color: #8257e6;
-  color:whitesmoke;
-  border-radius: 1rem;
-  overflow: hidden;
-  opacity: 1;
-  transition: width 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	font-size: 1rem;
+	width: 60%;
+	height: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+	background-color: #8257e6;
+	color: whitesmoke;
+	border-radius: 1rem;
+	overflow: hidden;
+	opacity: 1;
+	transition: width 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .main .trans {
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
+	animation: fadein 3s;
+	-moz-animation: fadein 3s; /* Firefox */
+	-webkit-animation: fadein 3s; /* Safari and Chrome */
+	-o-animation: fadein 3s; /* Opera */
 }
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .main form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-size: 1rem;
-  background-color: #8257e6;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 1rem;
+	background-color: #8257e6;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 .main form > button {
-  font-size: 1rem;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  color: #00ff00;
-  cursor: url(./img/pointinghand.png), auto;
-  z-index: 3;
+	font-size: 1rem;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	color: #00ff00;
+	cursor: url(./img/pointinghand.png), auto;
+	z-index: 3;
 }
 .main form div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	z-index: 2;
 }
 .main form div input {
-  font-size: 0.8rem;
-  font-weight: normal;
-  height: 1rem;
-  margin-top: 4px;
-  width: 100%;
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  padding-left: 1rem;
+	font-size: 0.8rem;
+	font-weight: normal;
+	height: 1rem;
+	margin-top: 4px;
+	width: 100%;
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	padding-left: 1rem;
 }
 .main form div button {
-  font-size: 0.8rem;
-  font-weight: normal;
-  background-color: #00ff00;
-  color: whitesmoke;
-  width: auto;
-  margin: 10px;
-  padding: 0;
-  border-radius: 1rem;
-  overflow: hidden;
-  border: none;
-  outline: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  /* padding: 0; */
-  opacity: 1;
-  border-radius: 2rem;
-  cursor: url(./img/pointinghandSubmit.png), auto;
+	font-size: 0.8rem;
+	font-weight: normal;
+	background-color: #00ff00;
+	color: whitesmoke;
+	width: auto;
+	margin: 10px;
+	padding: 0;
+	border-radius: 1rem;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	/* padding: 0; */
+	opacity: 1;
+	border-radius: 2rem;
+	cursor: url(./img/pointinghandSubmit.png), auto;
 }
-
