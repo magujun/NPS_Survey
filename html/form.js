@@ -36,10 +36,10 @@ $('#name').keyup(function () {
 
 	if (!valid) {
 		$(this).css('color', 'red');
-		$('#email_name-button').prop('disabled', true);
+		$('#name_email-button').prop('disabled', true);
 	} else {
 		$(this).css('color', '#00ff00');
-		$('#email_name-button').prop('disabled', false);
+		// $('#name_email-button').prop('disabled', false);
 	}
 });
 $('#email').keyup(function () {
@@ -48,10 +48,10 @@ $('#email').keyup(function () {
 
 	if (!valid) {
 		$(this).css('color', 'red');
-		$('#email_name-button').prop('disabled', true);
+		$('#name_email-button').prop('disabled', true);
 	} else {
 		$(this).css('color', '#00ff00');
-		$('#email_name-button').prop('disabled', false);
+		$('#name_email-button').prop('disabled', false);
 	}
 });
 
@@ -94,36 +94,36 @@ survey.submitDelay = 3000;
 
 survey.clickHandler = (e) => {
 	switch (e.target) {
-	case survey.create:
-		console.log('case survey.create');
-		survey.main.style.width = '80%';
-		survey.formParticipate.classList.add('hidden');
-		e.target.classList.add('trans');
-		survey.participate.classList.add('hidden');
-		survey.divCreate.classList.remove('hidden');
-		survey.inputTitle.classList.remove('hidden');
-		survey.inputDescription.classList.remove('hidden');
-		survey.buttonCreate.classList.remove('hidden');
-		survey.inputTitle.focus();
-		break;
-	case survey.participate:
-		console.log('case survey.participate');
-		survey.main.style.width = '80%';
-		survey.formCreate.classList.add('hidden');
-		e.target.classList.add('trans');
-		survey.create.classList.add('hidden');
-		survey.divParticipate.classList.remove('hidden');
-		survey.inputName.classList.remove('hidden');
-		survey.inputEmail.classList.remove('hidden');
-		survey.buttonParticipate.classList.remove('hidden');
-		survey.inputName.focus();
-		break;
-	case survey.buttonCreate:
-		survey.submitFormCreate();
-		break;
-	case survey.buttonParticipate:
-		survey.submitFormParticipate();
-		break;
+		case survey.create:
+			console.log('case survey.create');
+			survey.main.style.width = '80%';
+			survey.formParticipate.classList.add('hidden');
+			e.target.classList.add('trans');
+			survey.participate.classList.add('hidden');
+			survey.divCreate.classList.remove('hidden');
+			survey.inputTitle.classList.remove('hidden');
+			survey.inputDescription.classList.remove('hidden');
+			survey.buttonCreate.classList.remove('hidden');
+			survey.inputTitle.focus();
+			break;
+		case survey.participate:
+			console.log('case survey.participate');
+			survey.main.style.width = '80%';
+			survey.formCreate.classList.add('hidden');
+			e.target.classList.add('trans');
+			survey.create.classList.add('hidden');
+			survey.divParticipate.classList.remove('hidden');
+			survey.inputName.classList.remove('hidden');
+			survey.inputEmail.classList.remove('hidden');
+			survey.buttonParticipate.classList.remove('hidden');
+			survey.inputName.focus();
+			break;
+		case survey.buttonCreate:
+			survey.submitFormCreate();
+			break;
+		case survey.buttonParticipate:
+			survey.submitFormParticipate();
+			break;
 	}
 };
 survey.inputTitle.handleInputKeyPress = (e) => {
@@ -201,7 +201,7 @@ survey.submitFormCreate = () => {
 	survey.inputDescription.style.transition = 'all .6s ease';
 	survey.buttonCreate.style.transition = 'all .6s ease';
 	survey.main.style.transition =
-    'all .6s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
+		'all .6s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
 	survey.create.classList.add('hidden');
 	survey.divCreate.classList.add('hidden');
 	survey.formCreate.classList.add('hidden');
@@ -221,7 +221,7 @@ survey.submitFormParticipate = () => {
 	survey.inputEmail.style.transition = 'all .6s ease';
 	survey.buttonParticipate.style.transition = 'all .6s ease';
 	survey.main.style.transition =
-    'all .6s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
+		'all .6s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
 	survey.participate.classList.add('hidden');
 	survey.divParticipate.classList.add('hidden');
 	survey.formParticipate.classList.add('hidden');
