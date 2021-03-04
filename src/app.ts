@@ -12,6 +12,16 @@ const app = express();
 app.use(express.json());
 app.use(router);
 
+// Enable CORS
+app.use(function (request: Request, response: Response, _next: NextFunction) {
+	response.header('Access-Control-Allow-Origin', 'localhost'); // match the domain you will make the request from
+	response.header(
+		'Access-Control-Allow-Headers',
+		'Origin, X-Requested-With, Content-Type, Accept'
+	);
+	_next();
+});
+
 // Handle errors
 app.use(
 	(err: Error, request: Request, response: Response, _next: NextFunction) => {
