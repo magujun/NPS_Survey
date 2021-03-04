@@ -206,5 +206,5 @@ See the [LICENSE](LICENSE) file for more details.
 ---
 
 <h4 align="center">
-  Done by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
+  Done with ❤ by <a href="https://www.linkedin.com/in/marcelo-guimaraes-junior/" target="_blank">Marcelo Guimarães Junior.</a><br/>
 </h4>

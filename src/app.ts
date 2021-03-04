@@ -11,6 +11,8 @@ const app = express();
 
 app.use(express.json());
 app.use(router);
+
+// Handle errors
 app.use(
 	(err: Error, request: Request, response: Response, _next: NextFunction) => {
 		if (err instanceof AppError) {
@@ -22,6 +24,8 @@ app.use(
 			status: 'Error',
 			message: 'Internal server error ${err.message}',
 		});
+		_next();
 	}
 );
+
 export { app };

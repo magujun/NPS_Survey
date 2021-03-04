@@ -13,6 +13,7 @@ $('#title').keyup(function () {
 	if (!valid) {
 		$(this).css('color', 'red');
 		$('#title_desc-button').prop('disabled', true);
+		$('#title_desc-button').prop('class', 'disabled');
 	} else {
 		$(this).css('color', '#00ff00');
 		$('#title_desc-button').prop('disabled', false);
@@ -25,9 +26,11 @@ $('#description').keyup(function () {
 	if (!valid) {
 		$(this).css('color', 'red');
 		$('#title_desc-button').prop('disabled', true);
+		$('#title_desc-button').prop('class', 'disabled');
 	} else {
 		$(this).css('color', '#00ff00');
 		$('#title_desc-button').prop('disabled', false);
+		$('#title_desc-button').prop('class', false);
 	}
 });
 $('#name').keyup(function () {
@@ -37,6 +40,7 @@ $('#name').keyup(function () {
 	if (!valid) {
 		$(this).css('color', 'red');
 		$('#name_email-button').prop('disabled', true);
+		$('#name_email-button').prop('class', 'disabled');
 	} else {
 		$(this).css('color', '#00ff00');
 		// $('#name_email-button').prop('disabled', false);
@@ -49,9 +53,11 @@ $('#email').keyup(function () {
 	if (!valid) {
 		$(this).css('color', 'red');
 		$('#name_email-button').prop('disabled', true);
+		$('#name_email-button').prop('class', 'disabled');
 	} else {
 		$(this).css('color', '#00ff00');
 		$('#name_email-button').prop('disabled', false);
+		$('#name_email-button').prop('class', false);
 	}
 });
 
@@ -94,36 +100,36 @@ survey.submitDelay = 3000;
 
 survey.clickHandler = (e) => {
 	switch (e.target) {
-	case survey.create:
-		console.log('case survey.create');
-		survey.main.style.width = '80%';
-		survey.formParticipate.classList.add('hidden');
-		e.target.classList.add('trans');
-		survey.participate.classList.add('hidden');
-		survey.divCreate.classList.remove('hidden');
-		survey.inputTitle.classList.remove('hidden');
-		survey.inputDescription.classList.remove('hidden');
-		survey.buttonCreate.classList.remove('hidden');
-		survey.inputTitle.focus();
-		break;
-	case survey.participate:
-		console.log('case survey.participate');
-		survey.main.style.width = '80%';
-		survey.formCreate.classList.add('hidden');
-		e.target.classList.add('trans');
-		survey.create.classList.add('hidden');
-		survey.divParticipate.classList.remove('hidden');
-		survey.inputName.classList.remove('hidden');
-		survey.inputEmail.classList.remove('hidden');
-		survey.buttonParticipate.classList.remove('hidden');
-		survey.inputName.focus();
-		break;
-	case survey.buttonCreate:
-		survey.submitFormCreate();
-		break;
-	case survey.buttonParticipate:
-		survey.submitFormParticipate();
-		break;
+		case survey.create:
+			console.log('case survey.create');
+			survey.main.style.width = '80%';
+			survey.formParticipate.classList.add('hidden');
+			e.target.classList.add('trans');
+			survey.participate.classList.add('hidden');
+			survey.divCreate.classList.remove('hidden');
+			survey.inputTitle.classList.remove('hidden');
+			survey.inputDescription.classList.remove('hidden');
+			survey.buttonCreate.classList.remove('hidden');
+			survey.inputTitle.focus();
+			break;
+		case survey.participate:
+			console.log('case survey.participate');
+			survey.main.style.width = '80%';
+			survey.formCreate.classList.add('hidden');
+			e.target.classList.add('trans');
+			survey.create.classList.add('hidden');
+			survey.divParticipate.classList.remove('hidden');
+			survey.inputName.classList.remove('hidden');
+			survey.inputEmail.classList.remove('hidden');
+			survey.buttonParticipate.classList.remove('hidden');
+			survey.inputName.focus();
+			break;
+		case survey.buttonCreate:
+			survey.submitFormCreate();
+			break;
+		case survey.buttonParticipate:
+			survey.submitFormParticipate();
+			break;
 	}
 };
 survey.inputTitle.handleInputKeyPress = (e) => {
@@ -209,8 +215,8 @@ survey.submitFormCreate = () => {
 	survey.successMessageCreate.classList.remove('hidden');
 	survey.successMessageCreate.classList.add('trans');
 	survey.successMessageCreate.style.height = '100%';
-	const Form = document.getElementById('create');
-	Form.addEventListener('submit', handleFormSubmit);
+	const submit = document.getElementById('create');
+	submit.addEventListener('submit', handleFormSubmit);
 	//   let submission = setTimeout(
 	//     () => survey.formCreate.submit(),
 	//     survey.submitDelay
@@ -229,8 +235,8 @@ survey.submitFormParticipate = () => {
 	survey.successMessageParticipate.classList.remove('hidden');
 	survey.successMessageParticipate.classList.add('trans');
 	survey.successMessageParticipate.style.height = '100%';
-	const Form = document.getElementById('participate');
-	Form.addEventListener('submit', handleFormSubmit);
+	const submit = document.getElementById('participate');
+	submit.addEventListener('submit', handleFormSubmit);
 	// let submission = setTimeout(
 	// () => survey.formParticipate.submit(),
 	// survey.submitDelay

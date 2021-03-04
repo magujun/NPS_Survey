@@ -19,7 +19,7 @@
     <h3><a href=".">nodeJS-NPS_Survey</h3></a>
 
     <div class="main">
-      <form id="create" action="http://localhost:5500/surveys" method="POST">
+      <form id="create" action="http://localhost:8000/surveys" method="POST">
         <button id="create-button" type="button">
           Create your own NPS survey
         </button>
@@ -38,20 +38,20 @@
             class="hidden"
             placeholder="What's your survey question?"
           />
-          <button id="title_desc-button" type="submit" class="hidden" disabled="disabled">
+          <button id="title_desc-button" type="submit" class="hidden disabled" disabled="disabled">
             create
           </button>
         </div>
       </form>
       <div class="hidden" id="create_success">Survey created!</div>
-      <form id="participate" action="http://localhost:5500/users" method="POST">
+      <form id="participate" action="http://localhost:8000/users" method="POST">
         <button id="participate-button" type="button">
           Sign up to receive random NPS surveys
         </button>
         <div id="name_email" class="hidden">
           <input id="name" name="name" type="text" class="hidden" placeholder="What's your name?" />
           <input id="email" name="email" type="text" class="hidden" placeholder="What's your email?" />
-          <button id="name_email-button" type="submit" class="hidden" disabled="disabled">
+          <button id="name_email-button" type="submit" class="hidden disabled" disabled="disabled">
             send
           </button>
         </div>

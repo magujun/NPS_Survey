@@ -7,8 +7,7 @@
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "devDB": "ts-node-dev --transpile-only --ignore-watch node_modules src/database/index.ts",
-    "test": "cross-env NODE_ENV=test jest -i",
-    "start": "nodemon index.ts"
+    "test": "cross-env NODE_ENV=test jest -i"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

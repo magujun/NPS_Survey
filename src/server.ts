@@ -11,7 +11,8 @@
 
 import { app } from './app';
 
-app.listen(3333, () => console.log('Node server is running!'));
+const PORT = 8000;
+app.listen(PORT, () => console.log('⚡️ Node server is running at port:',PORT,'⚡️'));
 
 // /**
 //  * GET => Busca
