@@ -1,7 +1,7 @@
-import { PrimaryColumn, Column, CreateDateColumn, Entity } from "typeorm";
-import { v4 as uuid } from "uuid"
+import { PrimaryColumn, Column, CreateDateColumn, Entity } from 'typeorm';
+import { v4 as uuid } from 'uuid';
 
-@Entity("users")
+@Entity('users')
 class User {
 
   @PrimaryColumn()
@@ -17,10 +17,10 @@ class User {
   created_at: Date
 
   constructor() {
-    if (!this.id) {
-      this.id = uuid()
-    }
+  	if (!this.id) {
+  		this.id = uuid();
+  	}
   }
 }
 
-export { User }
+export { User };

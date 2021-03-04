@@ -19,7 +19,7 @@
     <h3><a href=".">nodeJS-NPS_Survey</h3></a>
 
     <div class="main">
-      <form id="create" action="../surveys" method="POST">
+      <form id="create" action="http://localhost:5500/surveys" method="POST">
         <button id="create-button" type="button">
           Create your own NPS Survey
         </button>
@@ -44,7 +44,7 @@
         </div>
       </form>
       <div class="hidden" id="create_success">Survey created!</div>
-      <form id="participate" action="../users" method="POST">
+      <form id="participate" action="http://localhost:5500/users" method="POST">
         <button id="participate-button" type="button">
           Participate in a random NPS Survey
         </button>
