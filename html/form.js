@@ -100,36 +100,36 @@ survey.submitDelay = 3000;
 
 survey.clickHandler = (e) => {
 	switch (e.target) {
-		case survey.create:
-			console.log('case survey.create');
-			survey.main.style.width = '80%';
-			survey.formParticipate.classList.add('hidden');
-			e.target.classList.add('trans');
-			survey.participate.classList.add('hidden');
-			survey.divCreate.classList.remove('hidden');
-			survey.inputTitle.classList.remove('hidden');
-			survey.inputDescription.classList.remove('hidden');
-			survey.buttonCreate.classList.remove('hidden');
-			survey.inputTitle.focus();
-			break;
-		case survey.participate:
-			console.log('case survey.participate');
-			survey.main.style.width = '80%';
-			survey.formCreate.classList.add('hidden');
-			e.target.classList.add('trans');
-			survey.create.classList.add('hidden');
-			survey.divParticipate.classList.remove('hidden');
-			survey.inputName.classList.remove('hidden');
-			survey.inputEmail.classList.remove('hidden');
-			survey.buttonParticipate.classList.remove('hidden');
-			survey.inputName.focus();
-			break;
-		case survey.buttonCreate:
-			survey.submitFormCreate();
-			break;
-		case survey.buttonParticipate:
-			survey.submitFormParticipate();
-			break;
+	case survey.create:
+		console.log('case survey.create');
+		survey.main.style.width = '80%';
+		survey.formParticipate.classList.add('hidden');
+		e.target.classList.add('trans');
+		survey.participate.classList.add('hidden');
+		survey.divCreate.classList.remove('hidden');
+		survey.inputTitle.classList.remove('hidden');
+		survey.inputDescription.classList.remove('hidden');
+		survey.buttonCreate.classList.remove('hidden');
+		survey.inputTitle.focus();
+		break;
+	case survey.participate:
+		console.log('case survey.participate');
+		survey.main.style.width = '80%';
+		survey.formCreate.classList.add('hidden');
+		e.target.classList.add('trans');
+		survey.create.classList.add('hidden');
+		survey.divParticipate.classList.remove('hidden');
+		survey.inputName.classList.remove('hidden');
+		survey.inputEmail.classList.remove('hidden');
+		survey.buttonParticipate.classList.remove('hidden');
+		survey.inputName.focus();
+		break;
+	case survey.buttonCreate:
+		survey.submitFormCreate();
+		break;
+	case survey.buttonParticipate:
+		survey.submitFormParticipate();
+		break;
 	}
 };
 survey.inputTitle.handleInputKeyPress = (e) => {

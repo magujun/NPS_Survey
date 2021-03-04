@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(router);
 
 // Enable CORS
-app.use(function (request: Request, response: Response, _next: NextFunction) {
+app.use((request: Request, response: Response, _next: NextFunction) => {
 	response.header('Access-Control-Allow-Origin', 'localhost'); // match the domain you will make the request from
 	response.header(
 		'Access-Control-Allow-Headers',
