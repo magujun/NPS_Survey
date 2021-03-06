@@ -1,10 +1,10 @@
-import express, { Request, Response, NextFunction, Router } from 'express';
-import { UserController } from './controllers/UserController';
-import { SurveyController } from './controllers/SurveyController';
-import { SendMailController } from './controllers/SendMailController';
+import cors from 'cors';
+import { Router } from 'express';
 import { AnswerController } from './controllers/AnswerController';
 import { NpsController } from './controllers/NpsController';
-import cors from 'cors';
+import { SendMailController } from './controllers/SendMailController';
+import { SurveyController } from './controllers/SurveyController';
+import { UserController } from './controllers/UserController';
 
 const router = Router();
 
@@ -14,28 +14,12 @@ const sendMailController = new SendMailController();
 const answerController = new AnswerController();
 const npsController = new NpsController();
 
-const app = express();
-
-app.use(cors());
-
-// Enable CORS
-app.use((request: Request, response: Response, _next: NextFunction) => {
-	response.header('Access-Control-Allow-Origin', 'localhost'); // match the domain you will make the request from
-	response.header(
-		'Access-Control-Allow-Headers',
-		'Origin, X-Requested-With, Content-Type, Accept'
-	);
-	_next();
-});
-
-// Enable pre-flight across-the-board
-app.options('*', cors()); // include before other routes
-
-router.post('/users', userController.create);
-router.post('/surveys', surveyController.create);
-router.get('/surveys', surveyController.show);
-router.post('/sendMail', sendMailController.execute);
-router.get('/answers/:value', answerController.execute);
-router.get('/nps/:survey_id', npsController.execute);
+router.post('/users', cors(), userController.create);
+router.post('/surveys', cors(), surveyController.create);
+router.get('/surveys', cors(), surveyController.show);
+router.post('/sendMail', cors(), sendMailController.execute);
+router.get('/answers/:value', cors(), answerController.execute);
+router.get('/nps/:survey_id', cors(), npsController.execute);
 
 export { router };
+
