@@ -27,9 +27,6 @@ app.use((request: Request, response: Response, _next: NextFunction) => {
 	_next();
 });
 
-// Enable pre-flight across-the-board
-app.options('*', cors()); // include before other routes
-
 app.listen(PORT, () => console.log('⚡️ Node server is running at port:',PORT,'⚡️'));
 
 // /**

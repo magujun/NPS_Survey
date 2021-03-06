@@ -14,6 +14,9 @@ const sendMailController = new SendMailController();
 const answerController = new AnswerController();
 const npsController = new NpsController();
 
+// Enable pre-flight across-the-board
+router.options('*', cors()); // include before other routes
+
 router.post('/users', cors(), userController.create);
 router.post('/surveys', cors(), surveyController.create);
 router.get('/surveys', cors(), surveyController.show);
