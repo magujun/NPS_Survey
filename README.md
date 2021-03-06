@@ -31,6 +31,7 @@ This project has been developed and tested with the following technologies:
 - [Yarn](https://yarnpkg.com/) :: package manager
 - [SQLite3](https://www.sqlite.org/) :: local database
 - [TypeORM](https://typeorm.io/) :: object-relational-mapping database migration
+- [Cors](https://github.com/expressjs/cors) :: Express middleware to enable CORS
 - [Handlebars](https://handlebarsjs.com/) :: html templating for email content
 - [Nodemailer](https://nodemailer.com/) :: Node.js module to send emails
 - [Jest](https://jestjs.io/) :: JavaScript testing framework
@@ -111,6 +112,11 @@ or
 - yarn typeorm migration:create -n CreateSurveys
 - yarn typeorm migration:create -n CreateSurveysUsers
 - yarn typeorm migration:run
+
+- yarn add body-parser
+
+- yarn add cors
+- yarn add @types/cors -D
 
 - yarn add uuid  
 - yarn add @types/uuid -D
