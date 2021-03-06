@@ -9,10 +9,27 @@
 // app.use(express.json());
 // app.use(router);
 
+import cors from 'cors';
+import { NextFunction, Request, Response } from 'express';
 import { app } from './app';
 
 const PORT = 8000;
 app.listen(PORT, () => console.log('⚡️ Node server is running at port:',PORT,'⚡️'));
+
+app.use(cors());
+
+// Enable CORS
+app.use((_request: Request, response: Response, _next: NextFunction) => {
+	response.header('Access-Control-Allow-Origin', 'localhost'); // match the domain you will make the request from
+	response.header(
+		'Access-Control-Allow-Headers',
+		'Origin, X-Requested-With, Content-Type, Accept'
+	);
+	_next();
+});
+
+// Enable pre-flight across-the-board
+app.options('*', cors()); // include before other routes
 
 // /**
 //  * GET => Busca
